@@ -9,10 +9,16 @@
      * Founder & Programmer : Wisnu Groho Aji 
      * Website : http://wiqi.co
      */
-     
-     function __construct() {
+  
+    function __construct() {
          parent::__construct();
-         $this->
+         $this->ip = $this->input->ip_address();
+         $this->user_agent = $this->agent->agent_string();
+         $this->platform = $this->agent->platform();
+     }
+     
+     function index(){
+         
      }
      
     
