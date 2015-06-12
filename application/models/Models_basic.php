@@ -16,6 +16,7 @@ class Models_basic extends CI_model {
         //Conditional Menu
         $where['tb_status_menu'] = 1;
         $value = "";
+        $query = $this->db->get_where
         if ($position == "atas"){
             
         }
