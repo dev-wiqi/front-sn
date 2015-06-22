@@ -18,7 +18,10 @@
      }
      
      function index(){
+         $a['menu'] = $this->models_basic->menu("atas");
+         $a['menu_bottom'] = $this->models_basic->menu("bawah");
          
+         $this->load->view("menu",$a);
      }
      
     
